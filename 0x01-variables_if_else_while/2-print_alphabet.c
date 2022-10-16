@@ -1,9 +1,7 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
 /**
- * main - prints alphabets in small letters, executes and prints it
+ * main - printing the alphabets a-z
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -16,4 +14,5 @@ int main(void)
 		alpha++;
 	}
 	putchar('\n');
+	return (0);
 }
