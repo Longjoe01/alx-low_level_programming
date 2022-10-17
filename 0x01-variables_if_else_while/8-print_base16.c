@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int n = 0;
+	int n = 48;
 	char alpha = 'a';
 
 	while (n <= 57)
@@ -22,5 +22,6 @@ int main(void)
 		putchar(alpha);
 		alpha++;
 	}
+	putchar('\n');
 	return (0);
 }
