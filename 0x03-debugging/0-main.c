@@ -5,7 +5,7 @@
 /**
  * main - tests function that prints if integer is positive or negative
  *
- * Description - check if integer is positive or negative
+ * Description - debug code to check for positive and negative integer
  *
  * Return: 0
  *
