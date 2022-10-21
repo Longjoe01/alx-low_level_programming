@@ -7,7 +7,6 @@
  */
 int _isupper(int c)
 {
-	char c;
 
 	if (c > 65 && c < 91)
 	{
@@ -17,6 +16,5 @@ int _isupper(int c)
 	{
 		return (1);
 	}
-	return (0);
 }
 
