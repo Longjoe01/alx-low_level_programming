@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* more_numbers - prints 10 times the number from 0 to 14
-* follow by a newline.
-*Return: 0
+* more_numbers - print numbers between 0 and 14
+* 10 times.
+* Return: no return.
 */
 void more_numbers(void)
 {
@@ -11,7 +11,7 @@ void more_numbers(void)
 
 	for (i = 0; i < 10; i++)
 	{
-	for (j = 1; j < 15; j++)
+	for (j = 0; j < 15; j++)
 	{
 	if (j >= 10)
 	_putchar((j / 10) + 48);
