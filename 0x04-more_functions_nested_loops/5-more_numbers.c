@@ -5,7 +5,6 @@
 * follow by a newline.
 *Return: 0
 */
-
 void more_numbers(void)
 {
 	int i, j;
@@ -15,7 +14,6 @@ void more_numbers(void)
 		for (j = 1; j <= 14; j++)
 		{
 		if (j >= 10)
-
 		_putchar((j / 10) + 48);
 		_putchar((j % 10) + 48);
 		}
