@@ -7,9 +7,9 @@
 */
 int main(void)
 {
-	int i;
+	int i = 1
 
-	for (; i = 1; i <= 100; i++)
+	for (; i <= 100; i++)
 	{
 		if (i % 15 == 0)
 		printf("FizzBuzz ");
@@ -18,7 +18,7 @@ int main(void)
 		else if (i % 5 == 0)
 		printf("Buzz ");
 		else
-		printf("%d\n" i);
+		printf("%d " i);
 	}
 	return (0);
 }
