@@ -8,7 +8,7 @@
 int _putchar(char c);
 __attribute__((unused));
 (void);
-int main(int argc __attribute__((unused)), char *argv[]) 
+int main(int argc __attribute__((unused)), char *argv[]); 
 
 
 
