@@ -22,9 +22,9 @@ char *create_array(unsigned int size, char c)
 	}
 	while (i < size)
 	{
-		(arr + 1) = c;
+		*(arr + 1) = c;
 		
 	}
-	(arr + 1) = '\0';
+	*(arr + 1) = '\0';
 	return (arr);
 }
