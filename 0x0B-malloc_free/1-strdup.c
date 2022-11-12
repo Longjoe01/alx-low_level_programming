@@ -6,7 +6,7 @@
  * string given as a parameter
  * @str: string to be newly allocated in memory
  * Return: NULL if string is empty or insufficient memory
- * a pointer to the duplicated string (Success)
+ * a pointer to the duplicate string (Success)
  */
 char *_strdup(char *str)
 {
