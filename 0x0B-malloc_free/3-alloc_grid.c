@@ -1,26 +1,40 @@
+nclude <stdlib.h>
 #include "main.h"
-#include <stdlib.h>
 /**
-* create_array - function that creates an array of char
-* @size: size of char
-* @c: pointer
-* Return: NULL or 0
-*/
-char *create_array(unsigned int size, char c)
+ * **alloc_grid - creates a two dimensional array of ints
+ * @width: width of the matrix
+ * @height: height of the matrix
+ * Return: pointer to the created matrix (Success)
+ * or NULL (Error)
+ */
+int **alloc_grid(int width, int height)
 {
-	unsigned int i;
-	char *arr;
+	int **arr;
+	int i, j;
 
-	if (size == 0)
+	if (height <= 0 || width <= 0)
 		return (NULL);
-	arr = (char *) malloc(sizeof(char) * size);
+	arr = (int **) malloc(sizeof(int *) * height);
 	if (arr == NULL)
-	{
 		return (NULL);
-	}
-	for (i = 0; i < size; i++)
+	for (i = 0; i < height; i++)
 	{
-		arr[i] = c;
+		arr[i] = (int *) malloc(sizeof(int) * width);
+		if (arr[i] == NULL)
+		{
+			free(arr);
+			for (j = 0; j <= i; j++)
+				free(arr[j]);
+			return (NULL);
+		}
+	}
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			arr[i][j] = 0;
+		}
 	}
 	return (arr);
+
 }
