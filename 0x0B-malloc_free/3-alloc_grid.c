@@ -1,4 +1,4 @@
-nclude <stdlib.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * **alloc_grid - creates a two dimensional array of ints
