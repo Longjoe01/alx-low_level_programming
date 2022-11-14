@@ -5,4 +5,4 @@
 
 
 
-#endif /* OBJECT_LIKE_MACRO_H
+#endif /* OBJECT_LIKE_MACRO_H */
