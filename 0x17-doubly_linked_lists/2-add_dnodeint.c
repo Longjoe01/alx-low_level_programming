@@ -2,13 +2,13 @@
 
 /**
 * add_dnodeint - add a new node at the beginning
-* @h: pointer to the first node
+* @head: pointer to the first node
 * @n: element of the node to be added
 * Return: 0 if failed else pointer to new node
 */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
-{	
+{
 
 	dlistint_t *temp;
 
@@ -26,6 +26,6 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	(*head)->prev = temp;
 	}
 	*head = temp;
-	
+
 	return (*head);
 }
