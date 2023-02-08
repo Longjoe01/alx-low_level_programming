@@ -28,6 +28,7 @@ void hash_table_delete(hash_table_t *ht)
 void free_node(hash_node_t *n)
 {
 	hash_node_t *tmp;
+
 	while (n)
 	{
 		tmp = n->next;
